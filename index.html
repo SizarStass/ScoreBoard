@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id="ScoreBoard">
+            <div class="timer"> 
+                <!-- NOT WORKING CURRENTLY. All the timer code is from dcode on Youtube: https://www.youtube.com/watch?v=PIiMSMz7KzM&t=836s&ab_channel=dcode-->
+                <span class="timer__part timer__part--minutes">00</span>
+                <span class="timer__part">:</span>
+                <span class="timer__part timer__part--seconds">00</span>
+                <button type="button" class="timer__btn timer__btn--control timer__btn--control--start">
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </button>
+
+            </div>
+                <div class="teams-containter">
+                    <div class="team-items">
+                        <h3 class="team-title">HOME</h3>
+                        <div class="score">
+                            <p id="homeScore-el">0</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="button" onclick="addOnePoint(document.getElementById('homeScore-el'))"> +1 </button>
+                            <button class="button" onclick="addTwoPoints(document.getElementById('homeScore-el'))"> +2 </button>
+                            <button class="button" onclick="addThreePoints(document.getElementById('homeScore-el'))"> +3 </button>
+                        </div>
+                    </div>
+                        
+                    <div class="team-items">
+                        <h3 class="team-title">GUEST</h3>
+                        <div class="score">
+                            <p id="guestScore-el">0</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="button" onclick="addOnePoint(document.getElementById('guestScore-el'))"> +1 </button>
+                            <button class="button" onclick="addTwoPoints(document.getElementById('guestScore-el'))"> +2 </button>
+                            <button class="button" onclick="addThreePoints(document.getElementById('guestScore-el'))"> +3 </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="game-control-buttons">
+                    <div>
+                        <button id="EndGame" class="game-button" onclick="endGame()"> End Game</button>
+                    </div>
+                    <div>
+                        <button id="resetButton" class="game-button" onclick="resetPoints()"> Reset Score</button>
+                    </div>
+                </div>
+                
+        </div>
+        
+        <script src="index.js"  ></script>
+    </body>
+</html>

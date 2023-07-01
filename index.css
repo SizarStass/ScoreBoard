@@ -1,0 +1,117 @@
+body {
+    margin: 20px;
+    text-align: center;
+}
+#scoreboard{
+    background-color:#1B244A ;
+    width: 580px;
+    height:fit-content;
+    margin: 0 auto;
+    color: #EEEE;
+    font-size: 40px;
+    
+}
+.timer{
+    font-family: Cursed Timer ULiL;
+    display: inline-block;
+    background-color:black;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.timer__part{
+    font-weight: bold;
+}
+.timer__btn{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: purple;
+
+}
+.timer__btn--control--start{
+    background-color: #00b84c;
+}
+
+.team-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+
+}
+
+.teams-containter {
+    display: flex;
+    justify-content: center;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color:black;
+    color: #F94F6D;
+    width: 155px;
+    height: 120px;
+    font-size: 90px;
+    margin: 20px 0 25px 0;
+    font-family: Cursed Timer ULiL;
+}
+
+.team-title{
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons{
+    margin-top: 0;
+   
+}
+
+.button{
+    background-color: #1B244A ;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    font-size: 18px;
+    font-family: Cursed Timer ULiL;
+}
+
+.game-button{
+    margin: 5px;
+    width: 200px;
+    color:#EEEE;
+    border: none;
+    border-radius:10px;
+    padding: 6px 0;
+   
+}
+#game-control-buttons{
+    margin:25px;
+    padding-bottom: 20px;
+    
+}
+
+#EndGame{
+    background-color: red;
+}
+
+#resetButton{
+    background-color: green;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.game-button:hover{
+    transform: scale(1,1.1);
+}
